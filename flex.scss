@@ -1,0 +1,22 @@
+$col-margin: 10px;
+$col-width: percentage(1) / 12;
+$row-padding: 10px;
+
+.flex-row {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: $row-padding;
+  padding-right: $row-padding;
+}
+
+@for $i from 1 through 12 {
+  $width: $col-width * $i;
+
+  .flex-column-#{$i} {
+    width: $width;
+    margin-left: $col-margin;
+    margin-right: $col-margin;
+  }
+}

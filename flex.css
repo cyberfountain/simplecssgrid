@@ -1,0 +1,80 @@
+.flex-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.flex-column-1 {
+    width: 8.3333333333%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-2 {
+    width: 16.6666666667%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-3 {
+    width: 25%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-4 {
+    width: 33.3333333333%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-5 {
+    width: 41.6666666667%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-6 {
+    width: 50%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-7 {
+    width: 58.3333333333%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-8 {
+    width: 66.6666666667%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-9 {
+    width: 75%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-10 {
+    width: 83.3333333333%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-11 {
+    width: 91.6666666667%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.flex-column-12 {
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+}
