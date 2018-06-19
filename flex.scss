@@ -1,22 +1,98 @@
 $col-margin: 10px;
+$col-margins: $col-margin *2;
 $col-width: percentage(1) / 12;
 $row-padding: 10px;
+
+* {
+  box-sizing: border-box;
+}
 
 .flex-row {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   padding-left: $row-padding;
   padding-right: $row-padding;
 }
 
-@for $i from 1 through 12 {
-  $width: $col-width * $i;
+.flex-column {
+  -webkit-flex-basis: 100%;
+  -ms-flex-preferred-size: 100%;
+  flex-basis: 100%;
+  margin-left: $col-margin;
+  margin-right: $col-margin;
+}
 
-  .flex-column-#{$i} {
-    width: $width;
-    margin-left: $col-margin;
-    margin-right: $col-margin;
+// Small screens
+@media only screen and (max-width: 40em) {
+  @for $i from 1 through 12 {
+    $width: $col-width * $i;
+
+    .flex-column-#{$i}-sm {
+      -webkit-flex-basis: calc(#{$width} - #{$col-margins});
+      -ms-flex-preferred-size: calc(#{$width} - #{$col-margins});
+      flex-basis: calc(#{$width} - #{$col-margins});
+    }
+  }
+}
+
+// Medium screens
+@media only screen and (min-width: 40.063em) {
+  @for $i from 1 through 12 {
+    $width: $col-width * $i;
+
+    .flex-column-#{$i}-md {
+      -webkit-flex-basis: calc(#{$width} - #{$col-margins});
+      -ms-flex-preferred-size: calc(#{$width} - #{$col-margins});
+      flex-basis: calc(#{$width} - #{$col-margins});
+    }
+  }
+}
+
+// Large screens
+@media only screen and (min-width: 64.063em) {
+  @for $i from 1 through 12 {
+    $width: $col-width * $i;
+
+    .flex-column-#{$i}-lg {
+      -webkit-flex-basis: calc(#{$width} - #{$col-margins});
+      -ms-flex-preferred-size: calc(#{$width} - #{$col-margins});
+      flex-basis: calc(#{$width} - #{$col-margins});
+    }
+  }
+}
+
+// XLarge screens
+@media only screen and (min-width: 90.063em) {
+  @for $i from 1 through 12 {
+    $width: $col-width * $i;
+
+    .flex-column-#{$i}-xlg {
+      -webkit-flex-basis: calc(#{$width} - #{$col-margins});
+      -ms-flex-preferred-size: calc(#{$width} - #{$col-margins});
+      flex-basis: calc(#{$width} - #{$col-margins});
+    }
+  }
+}
+
+// XXLarge screens
+@media only screen and (min-width: 120.063em) {
+  @for $i from 1 through 12 {
+    $width: $col-width * $i;
+
+    .flex-column-#{$i}-xxlg {
+      -webkit-flex-basis: calc(#{$width} - #{$col-margins});
+      -ms-flex-preferred-size: calc(#{$width} - #{$col-margins});
+      flex-basis: calc(#{$width} - #{$col-margins});
+    }
   }
 }
